@@ -1,0 +1,577 @@
+*{
+  padding: 0;
+  margin: 0;
+ 
+    /* box-sizing: border-box; */
+
+  font-family: "barlow";
+}
+nav{
+  /* border: 2px red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+
+  background-color: #000000;
+
+  position:fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  overflow: hidden;
+
+}
+/* #navbar{
+position:fixed;
+top:0;
+left:0;
+} */
+
+ul{
+  display: flex;
+  list-style: none;
+/* text-align: center; */
+color: #fff;
+  gap: 2rem;
+  position:fixed;
+  right:0;
+  padding-right: 15px;
+  
+}
+nav a{
+  color: white;
+  text-decoration: none;
+
+}
+a:hover{
+  background-color: rgb(0, 104, 38);
+  border-radius: 10px;
+  padding: 10px;
+}
+.logo{
+justify-content: flex-start;
+align-items: flex-start;
+  font-size: 2rem;
+  color: #fff;
+  
+  margin-right: 700px;
+ 
+}
+.btn{
+margin-top: 30px;
+
+  color: white;
+  cursor: pointer;
+  border-radius: 25px;
+  padding:1rem 2rem;
+}
+
+
+img{
+  width: 100%;
+  
+  object-fit: cover;
+  object-position: center;
+}
+header{
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.2)),url(https://cdn.narendramodi.in/cmsuploads/0.73877400_1523541569_attachref.png);
+  background-position: center;
+  background-size: cover;
+
+  height: 100vh;
+}
+#home{
+  display: flex;
+
+  text-align: center;
+  flex-direction: column;
+  padding: 220px 200px;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  
+  text-align: center;
+}
+.overlay{
+  background: rgba(0,0,0,-5);
+  height: 100vh;
+  /* border: 2px red; */
+}
+#mobile{
+  display: none;
+  height: 70px;
+  line-height: 40px;
+  /* background-color: rgba(0, 0, 0, 0.200); */
+  background-color: #262626;
+  position:fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    overflow: hidden;
+  
+}
+
+#mobile ul li{
+
+  justify-content: flex-end;
+  padding: -25px 5px;
+  margin: -38px 0;
+  font-size: 1rem;
+  color: white;
+}
+#mobile ul li a{
+  display: flex;
+  text-decoration: none;
+  color: white;
+}
+@media screen and (max-width:768px) {
+  #mobile{
+    display: block;
+  }
+  #navbar{
+    display: none;
+    /* border: 2px red; */
+    
+  }
+  #home{
+    display: flex;
+   
+    margin-top: 20px;
+    
+    text-align: center;
+   
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+  
+  .logo1{
+    
+
+    justify-content: flex-start;
+  align-items: flex-start;
+    font-size: 1.8rem;
+    color: #fff;
+    
+   
+    margin-left: 20px;
+    margin-right: 500px;
+    margin-top: 15px;
+  }
+  a:hover{
+    background-color: rgb(22, 22, 94);
+    color: white;
+    border-radius: 16px;
+    padding: 6px 8px 6px 8px;
+    margin: -7px;
+  }
+  header{
+    
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.2)),url(https://cdn.narendramodi.in/cmsuploads/0.73877400_1523541569_attachref.png);
+    background-position: center;
+    background-size: cover;
+  
+    height: 180vh;
+}
+
+}
+/* .title{
+    text-align: left;
+    width: 100%;
+   color: yellow;
+  left:20px;
+} */
+
+
+#menu{
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(350px,1fr));
+    grid-gap: 20px 40px;
+    background: rgb(245, 242, 242);
+    min-height: 100vh;
+    /* margin-bottom: 20px; */
+}
+.heading{
+  background: rgb(245, 242, 242);
+    color: #373333;
+    margin-bottom: 30px;
+    padding: 60px 0 30px 0;
+    grid-column: 1/-1;
+    text-align: center;
+}
+.heading>h3{
+    font-weight: 600;
+    font-size: 22px;
+    letter-spacing: 5px;
+}
+.card{
+    display: grid;
+    position: relative;
+    grid-template-rows: auto 1fr;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    margin: 10px 20px;
+}
+
+.card img{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    border-radius: 15px 15px 0 0;
+}
+
+.details{
+    padding: 20px 10px;
+    display: grid;
+    grid-template-rows: auto 1fr 50px;
+    grid-row-gap: 15px;
+}
+.details-sub{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.details-sub h5{
+    font-weight: 600;
+    font-size: 18px;
+}
+.details p{
+    color: #6f6f6f;
+    font-size: 15px;
+    line-height: 25px;
+    align-self: stretch;
+}
+.details button{
+  /* background-color: #cb202d; */
+  /* border: none; */
+  color: #000000;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 7px;
+  width: 180px;
+  position: relative;
+  left:90px;
+}
+#about{
+  /* border: 2px red; */
+  padding: 25px 0;
+    }
+    .about_row{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 0 100px;
+    }
+    .about_column{
+      flex: 1;
+    }
+    #btn1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 10px;
+    border-radius: 15px;
+    /* position: center; */
+    left:500px;
+    }
+    .about_column img{
+      width: 500px;
+      height: 500px;
+      border-radius: 50%;
+      object-fit: fill;
+      margin: auto;
+    }
+    .title{
+      color: #373333;
+      margin-bottom: 30px;
+      padding: 50px 0 30px 0;
+      text-align: left;
+      margin-left: 100px;
+      margin-bottom: 2px;
+    }
+
+    #services{
+      margin-top: 30px;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat( auto-fit, minmax(350px,1fr));
+      grid-gap: 20px 40px;
+      background: rgb(245, 242, 242);
+      min-height: 100vh;
+      margin-bottom: 20px;
+  }
+  .heading{
+    background: rgb(245, 242, 242);
+      color: #373333;
+      margin-bottom: 30px;
+      padding: 60px 0 30px 0;
+      grid-column: 1/-1;
+      text-align: center;
+  }
+  .heading>h3{
+      font-weight: 600;
+      font-size: 22px;
+      letter-spacing: 5px;
+  }
+  .card{
+      display: grid;
+      position: relative;
+      grid-template-rows: auto 1fr;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      margin: 10px 20px;
+  }
+  
+  .card img{
+      position: relative;
+      width: 100%;
+      height: 50vh;
+      border-radius: 15px 15px 0 0;
+  }
+  .details{
+    padding: 20px 10px;
+    display: grid;
+    grid-template-rows: auto 1fr 50px;
+    grid-row-gap: 15px;
+}
+.details-sub{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.details-sub h5{
+    font-weight: 600;
+    font-size: 18px;
+}
+.details p{
+    color: #6f6f6f;
+    font-size: 15px;
+    line-height: 25px;
+    align-self: stretch;
+}
+.details button{
+  /* background-color: #cb202d; */
+  /* border: none; */
+  color: #000000;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 7px;
+  width: 180px;
+  position: relative;
+  left:90px;
+}
+
+#dashboard {
+  padding: 5rem 0;
+  background: rgba(243, 243, 243);
+}
+
+.testimonial-title {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 400;
+  color: #555;
+}
+
+.testimonial-container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  padding: 1rem;
+}
+
+.testimonial-box .checked {
+  color: #ff9529;
+}
+
+.testimonial-box .testimonial-text {
+  margin: 1rem 0;
+  color: #444;
+}
+
+.testimonial-box {
+  text-align: center;
+  padding: 1rem;
+}
+
+.customer-photo img {
+  display: block;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.site-footer
+{
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+

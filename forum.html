@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup Community Forum</title>
+    <style>
+        /* Add your custom styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #3498db;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .forum-post {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .post-title {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .post-content {
+            margin-top: 10px;
+        }
+
+        .post-meta {
+            color: #555;
+            font-size: 14px;
+        }
+
+        .post-meta a {
+            text-decoration: none;
+            color: #3498db;
+        }
+
+        .post-meta a:hover {
+            text-decoration: underline;
+        }
+
+        .post-form {
+            margin-top: 20px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Startup Community Forum</h1>
+    </header>
+    <div class="container">
+        <!-- Forum Posts -->
+        <div class="forum-post">
+            <h2 class="post-title">How to Secure Funding for Your Startup</h2>
+            <div class="post-content">
+                <p>Here are some tips on securing funding for your startup...</p>
+            </div>
+            <div class="post-meta">Posted by <a href="#">JohnDoe</a> on September 5, 2023</div>
+        </div>
+
+        <!-- Add New Post Form -->
+        <div class="post-form">
+            <h2>Post a New Topic</h2>
+            <form action="submit_post.php" method="POST">
+                <label for="post-title">Title:</label>
+                <input type="text" id="post-title" name="post-title" required>
+
+                <label for="post-content">Content:</label>
+                <textarea id="post-content" name="post-content" rows="4" required></textarea>
+
+                <input type="submit" value="Post">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Add your custom styles here */
+        body {
+            background-image: url(https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+            color: white;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .profile-pic-container {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .profile-pic {
+            width: 100px;
+            height: 100px;
+            border: 2px solid #fff;
+            border-radius: 25%;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            background-color: black;
+        }
+
+        .overlay-text {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        /* Additional form styling (optional) */
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="date"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #2980b9;
+        }
+
+        .fa-regular {
+            font-size: 80px;
+           
+        }
+    </style>
+</head>
+
+<body>
+    <h1>User Profile Details</h1>
+    <div class="profile-pic-container">
+        <div class="profile-pic"> <i class="fa-regular fa-user"></i> </div>
+    </div>
+    <form action="submit.php" method="POST">
+        <!-- User's Name -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <!-- Gmail (Email) -->
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <!-- Mobile Number -->
+        <label for="mobile">Mobile Number:</label>
+        <input type="tel" id="mobile" name="mobile" required>
+
+        <!-- College/Organization -->
+        <label for="college">Profession:</label>
+        <input type="text" id="college" name="college" required>
+
+        <!-- Degree -->
+        <label for="degree">Degree:</label>
+        <input type="text" id="degree" name="degree" required>
+
+        <!-- Profile Picture Upload (input type="file") -->
+        <label for="profile-pic-upload">Profile Picture:</label>
+        <input type="file" id="profile-pic-upload" name="profile-pic">
+
+        <!-- Other Necessary Items (Add more fields as needed) -->
+        <label for="birthdate">DOB</label>
+        <input type="date" id="birthdate" name="birthdate">
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4"></textarea>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>

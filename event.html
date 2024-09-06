@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event and Workshop Registration</title>
+    <style>
+        /* Add your custom styles here */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .calendar {
+            width: 300px;
+            margin: 10px;
+        }
+        .eve{
+            display: flex;
+            justify-content: space-around;
+            
+            flex-wrap: wrap;
+        }
+        .event-date {
+            background-color: #3498db;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .registration-form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Event and Workshop Registration</h1>
+    
+    <div class="eve">
+        <div class="calendar">
+            <div class="event-date">
+                <h2>Upcoming Event</h2>
+                <p>Date: October 15, 2023</p>
+                <p>Location: Virtual</p>
+            </div>
+        </div>
+        <div class="calendar">
+            <div class="event-date">
+                <h2>Upcoming Event</h2>
+                <p>Date: October 15, 2023</p>
+                <p>Location: Virtual</p>
+            </div>
+        </div>
+        <div class="calendar">
+            <div class="event-date">
+                <h2>Upcoming Event</h2>
+                <p>Date: October 15, 2023</p>
+                <p>Location: Virtual</p>
+            </div>
+        </div>
+        <div class="calendar">
+            <div class="event-date">
+                <h2>Upcoming Event</h2>
+                <p>Date: October 15, 2023</p>
+                <p>Location: Virtual</p>
+            </div>
+        </div>
+        <div class="calendar">
+            <div class="event-date">
+                <h2>Upcoming Event</h2>
+                <p>Date: October 15, 2023</p>
+                <p>Location: Virtual</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="registration-form">
+        <h2>Register for the Event</h2>
+        <form action="register.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="event_name">Event Name:</label>
+            <input type="text" id="evname" name="evname" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <input type="submit" value="Register">
+        </form>
+    </div>
+</body>
+</html>

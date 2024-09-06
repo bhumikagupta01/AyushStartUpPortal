@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Startup Ayush Portal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="topofnav">
+                <div class="mobileheader"></div>
+                <div class="mainheader">
+                    <div class="left1">
+                        <div class="nav_container">
+                            <div class="leftcontainer">
+                                <ul>
+                                    <li><a href="#"><img class="logo2img1 logimg" src="./img/Gov of IND.png"
+                                                alt="failed to load"></a></li>
+                                    <li><a href="#"><img class="logo2img2 logimg" src="./img/MOCAI.png "
+                                                alt="Failed to load"></a></li>
+                                    <li>
+                                        <div class="social">
+                                            <ul>
+                                                <li><a href="#"><i  style="font-size:24px" class="fa-brands fa-linkedin"></i></a></li>
+                                                <li><a href="#"><img class="xtwitter" src="./img/twitter-icon-head.png"
+                                                            alt=""></a></li>
+                                                <!-- <li><a href="#"><i class="fa fa-facebook-f"
+                                                style="font-size:24px"></i></a></li> -->
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- <div class="righcontainer">
+                        <div class="tollnum">
+                            <p>Our Toll Free Number :1800 115 565 (10:00 AM to 05:30 PM)</p>
+                        </div>
+                    </div> -->
+                    <div id="datetime"></div>
+                    <script>function updateDateTime() {
+                            const datetimeElement = document.getElementById("datetime");
+                            const now = new Date();
+                            const date = now.toDateString();
+                            const time = now.toLocaleTimeString();
+                            datetimeElement.textContent = `${date} | ${time}`;
+                        }
+
+                        // Update the date and time initially and every second
+                        updateDateTime();
+                        setInterval(updateDateTime, 1000);</script>
+                </div>
+            </div>
+            <div class="midnav">
+                <div class="midnav1">
+                    <div class="logoarea">
+                        <ul>
+                            <li>
+                                <a href="#"><img src="./img/startuplogoa.png" alt="" class="logarea1"></a>
+                            </li>
+                            <li>
+                                <div class="verticalflip">
+                                    <!-- <span><img src="./img/Logo1.png" alt="" class="strt1"></span> -->
+                                    <span><img src="./img/DPIIT.svg" alt=""></span>
+                                    <span><img src="./img/logo3.png" alt=""></span>
+                                    <span><img src="./img/g20logo.png" alt=""></span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="midnav2">
+                    <div class="searchbarmain">
+                        <div class="search">
+                            <form class="searchform" action="#">
+                                <input id="searchbar" type="text" placeholder="Search Here">
+                                <span> <i class="fa fa-search" aria-hidden="true"></i></span>
+                            </form>
+                        </div>
+                        <div class="login">
+                            <a href="./loginpage/index.html">Login/Sign-Up</a>
+                        </div>
+
+
+                    </div>
+
+                    <div class="translate"><select name="" id="">
+                            <option value="">select language</option>
+                            <option value="English">English</option>
+                            <option value="Hindi">Hindi</option>
+                        </select> </div>
+                </div>
+
+            </div>
+            <div class="bottumnav">
+                <div class="navbottum">
+                    <div class="listsource">
+                        <ul>
+                            <li><a href="Home">Home</a></li>
+                            <li><a href="about">About Us</a></li>
+                            <li><a href="profile.html">Stakeholders</a>
+
+                                <div class="optionsList">
+                                    <ul>
+                                        <li><a href="profile.html">Startup</a></li>
+                                        <li><a href="profile.html">investors</a></li>
+                                        <li><a href="profile.html">Mentor</a></li>
+                                        <li><a href="profile.html">Incubators</a></li>
+                                        <li><a href="profile.html">Govrment Agencies</a></li>
+                                        <li><a href="profile.html">public Users</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a id="options">Collaboration</a>
+
+                                <div class="optionsList">
+                                    <ul>
+                                        <li><a href="event.html">Event & Workshop</a></li>
+                                        <li><a href="forum.html">Community & Forum</a></li>
+                                    </ul>
+                                </div>
+
+                            </li>
+                            <li><a href="network.html">Network</a></li>
+                            <li><a href="resource.html">Resources</a>
+                                <!-- <div class="optionsList">
+                                    <ul>
+                                        <li><a href="profile.html">News</a></li>
+                                        <li><a href="profile.html">Articles</a></li>
+                                        <li><a href="profile.html">Govt. Policies</a></li>
+                                        <li><a href="profile.html">Startup-toolkit</a></li>
+                                    </ul>
+                                </div> -->
+                            </li>
+                            <li><a href="#Resource">Ayush Marketplace</a></li>
+                            <li><a href="feedback.html">Feedback & Support</a></li>
+                            <li><a href="PRITAM resume.pdf">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <section id="hero" class="heroimg">
+
+
+        <div class="hero-content">
+            <h1>Welcome to Startup AYUSH</h1>
+            <p>Your Health, Our Heritage</p>
+            <a href="#about" class="cta-button btn">Learn More</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Startup India is a government initiative to promote innovation and entrepreneurship across the country.</p>
+        <p>"Startup India" is a significant government-led initiative aimed at fostering a culture of innovation and entrepreneurship 
+            throughout India. Launched with the vision of transforming the nation into a hub for startups, this program plays a pivotal role in shaping the economic landscape. At its core, Startup India is committed to providing a conducive ecosystem for budding entrepreneurs and innovative thinkers. It offers a range of incentives, support mechanisms, and regulatory reforms to facilitate the creation and growth of startups. These initiatives include simplifying the registration process, offering tax benefits, and establishing incubation centers and investment funds. Furthermore, Startup India promotes inclusivity by encouraging women and underrepresented communities to venture into entrepreneurship. It also facilitates access to funding through various channels, including venture capital, angel investors, and government schemes. The program has not only led to the emergence of countless startups but has also boosted job creation, technological advancements, and economic growth across diverse sectors. By nurturing a spirit of innovation and risk-taking, Startup India continues to empower entrepreneurs, enabling them to realize their dreams and contribute to India's socioeconomic development. In essence, it's a dynamic force propelling India into a brighter, more innovative future.</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service">
+            <h3>Startup Registration</h3>
+            <p>Register your startup and avail of various benefits and support.</p>
+        </div>
+        <div class="service">
+            <h3>Access to Funding</h3>
+            <p>Explore funding opportunities and connect with investors.</p>
+        </div>
+        <div class="service">
+            <h3>Resource Hub</h3>
+            <p>Access a wealth of resources, guides, and mentorship to grow your startup.</p>
+        </div>
+    </section>
+
+    <!-- More sections for Startups, Resources, and Contact -->
+
+    <footer>
+        <p>&copy; 2023 Ayush Startup.All Rights Reserved.</p>
+        <h4>HELP: +91 8022XXXXXX,894</h4>
+        <h4>E-mail: startupayush@india.gov.in</h4>
+        <div class="bot">
+            <i class="fa-brands fa-bots"></i>
+            <i class="bi bi-robot"></i>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
